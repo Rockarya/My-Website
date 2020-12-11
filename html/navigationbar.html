@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigation Bar+3 links to external websites(My ideals)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.responsive {
+        width: 100%;
+        height: auto;
+}
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+	  background-image: url("https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&w=1000&q=80");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.header {
+  background-color: #FFFF00;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+</div>
+
+<div id="navbar">
+  <a class="active" href="https://codeforces.com">Codeforces</a>
+  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwia55zSy7XnAhXbxDgGHS_MDnAQFjAAegQIEBAC&url=https%3A%2F%2Fwww.codechef.com%2F&usg=AOvVaw1AvaeVLjD8dXR5U8UXF3Sf">Codechef</a>
+  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwikxrb8zLXnAhU4zzgGHR9yAbgQFjAAegQIBhAC&url=https%3A%2F%2Fwww.geeksforgeeks.org%2F&usg=AOvVaw1dl_KozKUK3hHWc8sda1Zw">GeeksForGeeks</a>
+</div>
+
+<div class="content">
+<header>
+                <nav>
+                        <ul>
+                                <li><a href="../index.html" target="_blank">Home(including counter of homepage)</a></li>
+                                 <li><a href="Mysports.html" target="_blank">Mysports</a></li>
+                                  <li><a href="Myfood.html" target="_blank">Myfood</a></li>
+                                  <li><a href="table.html" target="_blank">Merged Table Cells</a></li>
+                                  <li><a href="navigationbar.html" target="_blank">Navigation Bar+3 links to external websites(My ideals)</a></li>
+				  <li><a href="gototop.html" target="_blank">My Visited Cities(go to top button application)</a></li>
+				  <li><a href="slideshow.html" target="_blank">Slideshow</a></li>
+				   <li><a href="referenceform.html" target="_blank">Reference Page</a></li>
+                        </ul>
+                </nav>
+
+	<h2>Let me tell you something about my ideals...<h2>
+		<h4>You know them well,nothing new to tell...</h4>
+	<h3>ELON MUSK<h3>
+		<img alt="elon musk" src="https://assets.entrepreneur.com/content/3x2/2000/20170118220227-GettyImages-471763092.jpeg" class="responsive" width="600" height="400">
+		<h3>APJ Abdul Kalam</h3>
+		<img alt="APJ" src="https://thelogicalindian.com/h-upload/2020/01/27/159040-apjfb.jpg" class="responsive" width="600" height="400">
+
+	</div>
+
+	<script>
+		window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+		</script>
+</body>
+	</html>

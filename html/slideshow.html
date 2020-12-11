@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Slideshow</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- Styles -->
+<style>
+.responsive {
+        width: 100%;
+        height: auto;
+}
+	body {
+  background-image: url("https://cdn2.vectorstock.com/i/1000x1000/55/11/green-nature-background-vector-985511.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+	</style>
+	</head>
+	<body>
+		<!-- HTML -->
+<h2>HELLO!</h2>
+<p>Let me tell you that i am a nature lover...</p>
+<p>I will show you a magic.</p>
+<p>Click on the image below once and wait for a second....</p>
+<p>You will get 5 different images,if you do not beleive then try it out</p>
+        <header>
+                <nav>
+                        <ul>
+                                <li><a href="../index.html" target="_blank">Home(including counter of homepage)</a></li>
+                                 <li><a href="Mysports.html" target="_blank">Mysports</a></li>
+                                  <li><a href="Myfood.html" target="_blank">Myfood</a></li>
+                                  <li><a href="table.html" target="_blank">Merged Table Cells</a></li>
+                                  <li><a href="navigationbar.html" target="_blank">Navigation Bar+3 links to external websites(My ideals)</a></li>
+                                  <li><a href="gototop.html" target="_blank">My Visited Cities(go to top button application)</a></li>
+				   <li><a href="slideshow.html" target="_blank">Slideshow</a></li>
+				    <li><a href="referenceform.html" target="_blank">Reference Page</a></li>
+                        </ul>
+                </nav>
+                </header>
+		<p>
+        <img alt="Nature" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" class="responsive" width="600" height="400"
+            id="imgClickAndChange" onclick="changeImage()"  />
+</p>
+
+<script language="javascript">
+    function changeImage() {
+
+        if (document.getElementById("imgClickAndChange").src == "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg")
+        {
+            document.getElementById("imgClickAndChange").src = "https://media.gettyimages.com/photos/pink-morning-at-lodhi-gardens-picture-id695641506?s=612x612";
+        }
+        else if(document.getElementById("imgClickAndChange").src == "https://media.gettyimages.com/photos/pink-morning-at-lodhi-gardens-picture-id695641506?s=612x612")
+        {
+            document.getElementById("imgClickAndChange").src = "https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+        }
+	    else if( document.getElementById("imgClickAndChange").src == "https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+	    {
+		    document.getElementById("imgClickAndChange").src = "https://hdwallpapers-backgrounds.com/wp-content/uploads/2019/07/nature-1024x543.png";}
+	    else if(document.getElementById("imgClickAndChange").src == "https://hdwallpapers-backgrounds.com/wp-content/uploads/2019/07/nature-1024x543.png")
+	    {
+		     document.getElementById("imgClickAndChange").src = "https://lh5.googleusercontent.com/proxy/iLIiaVX30KP3z9VQK6p7dymGP9lwX6JpqBXtQrnYGVARn1NrrZ9UAY3tj1G1CdONh863N31voHz0WDbhHo8Nfs71m8UBs3oOuLoVq1n9Q9v46ABTVQ";}
+	    else if(document.getElementById("imgClickAndChange").src == "https://lh5.googleusercontent.com/proxy/iLIiaVX30KP3z9VQK6p7dymGP9lwX6JpqBXtQrnYGVARn1NrrZ9UAY3tj1G1CdONh863N31voHz0WDbhHo8Nfs71m8UBs3oOuLoVq1n9Q9v46ABTVQ")
+		{
+			document.getElementById("imgClickAndChange").src = "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg";
+		}
+    }
+</script>
+
+</body>
+</html>
